@@ -18,11 +18,12 @@ export class AddStudentComponent implements OnInit {
   }
 
   studentName = "";
+  degree = "";
 
   addStudent() {
     this.studentSvc.addStudent({
       name: this.studentName,
-      degreeProgram: "Unknown"
+      degreeProgram: this.degree
     });
 
     this.location.back();
