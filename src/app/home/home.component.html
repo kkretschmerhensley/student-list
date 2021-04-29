@@ -3,7 +3,7 @@
 <h4 *ngIf="students.length === 0">No Student Data</h4>
 
 <ul *ngIf="students.length > 0">
-  <li *ngFor="let s of students">{{ s.name }} ({{ s.degreeProgam }})</li>
+  <li *ngFor="let s of students">{{ s.name }} ({{ s.degreeProgram }})</li>
 </ul>
 
 <button (click)="addStudent()">Add New Student</button>
